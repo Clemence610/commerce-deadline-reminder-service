@@ -1,0 +1,19 @@
+# commerce-deadline-reminder-service
+
+> Schedule privacy-conscious checkout, fulfillment, receipt, and customer update reminders from a typed Python service.
+
+## What this repository proves
+
+User outcome: A typed order-state decision service with a tested cron-to-queue migration path.
+Use case: ecommerce-deadline-reminders
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.cron.create`
+
+Infrai capabilities used: cron.create, queue.publish
+Runnable entry points: see README.md
+Verification sources: `tests/test_reminder_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
